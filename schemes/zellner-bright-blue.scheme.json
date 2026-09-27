@@ -1,0 +1,91 @@
+{
+  "name": "Zellner Bright Blue",
+  "type": "light",
+  "semanticHighlighting": true,
+  "ui": {
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "foregroundMuted": "#555555",
+    "foregroundSubtle": "#878787",
+    "foregroundDisabled": "#A9A9A9",
+    "contrast": "#000000",
+    "surface": "#FFFFFF",
+    "surfaceElevated": "#FFFFFF",
+    "borderSubtle": "#E6E6E6",
+    "borderDefault": "#D9D9D9",
+    "borderControl": "#BFBFBF"
+  },
+  "accent": {
+    "primary": "#0000FF",
+    "secondary": "#6A5ACD"
+  },
+  "status": {
+    "error": "#FF0000",
+    "warning": "#A52A2A",
+    "warningIcon": "#A020F0",
+    "success": "#5F875F",
+    "charts": {
+      "blue": "#0000FF",
+      "green": "#006400",
+      "purple": "#A020F0",
+      "orange": "#A52A2A"
+    }
+  },
+  "syntax": {
+    "primary": {
+      "foreground": "#000000",
+      "comment": "#ff0000",
+      "keyword": "#a52a2a",
+      "constant": "#ff00ff",
+      "string": "#ff00ff",
+      "function": "#0000ff",
+      "entity": "#00008b",
+      "tag": "#006400",
+      "invalid": "#ff0000",
+      "bracket": "#a52a2a",
+      "carriageReturnBg": "#f5f5f5",
+      "ignoredBg": "#ececec"
+    },
+    "plus": {
+      "function": "#0000ff",
+      "type": "#0000ff",
+      "controlKeyword": "#a020f0",
+      "variable": "#00008b",
+      "constant": "#ff00ff",
+      "regexpGroup": "#a020f0",
+      "regexpEscape": "#ff00ff"
+    },
+    "base": {
+      "comment": "#ff0000",
+      "keyword": "#a52a2a",
+      "number": "#ff00ff",
+      "string": "#ff00ff",
+      "regexp": "#a020f0",
+      "tag": "#006400",
+      "attribute": "#a52a2a",
+      "property": "#0000ff",
+      "header": "#a020f0",
+      "italic": "#6a5acd",
+      "invalid": "#ff0000"
+    }
+  },
+  "overrides": {
+    "colors": {
+      "activityBar.activeBackground": "#FFFFFF",
+      "activityBar.activeBorder": "#0000FF",
+      "editorGroup.border": "#E6E6E6",
+      "editorGroupHeader.tabsBorder": "#E6E6E6",
+      "list.focusAndSelectionOutline": "#0000FF",
+      "modernActivityBarItem.activeBackground": "#FFFFFF",
+      "modernActivityBarItem.activeForeground": "#0000FF",
+      "modernActivityBar.border": "#E6E6E6",
+      "panel.border": "#E6E6E6",
+      "panelInput.border": "#BFBFBF",
+      "panelTitle.activeBorder": "#0000FF",
+      "sideBar.border": "#E6E6E6",
+      "tab.activeBorderTop": "#0000FF",
+      "tab.selectedBackground": "#FFFFFF",
+      "tab.selectedBorderTop": "#0000FF"
+    }
+  }
+}

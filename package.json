@@ -1,0 +1,30 @@
+{
+  "name": "zellner-theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Port of the classic Zellner Vim color scheme to VS Code and other editors/tools",
+  "type": "module",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "compile:ref": "node scripts/compile-theme.js",
+    "compile:ref:dark": "node scripts/compile-theme.js references/2026-dark.json interim/2026-dark.compiled.json",
+    "expand": "node scripts/expand-theme.js",
+    "expand:dark": "node scripts/expand-theme.js schemes/2026-dark.scheme.json interim/2026-dark.expanded.json",
+    "build": "pnpm -r run build",
+    "package": "pnpm --filter vscode-theme-zellner run package && pnpm --filter vscode-theme-zellner-extended run package",
+    "test": "node --test scripts/test-theme.js scripts/test-theme-dark.js",
+    "test:dark": "node --test scripts/test-theme-dark.js",
+    "lint": "pnpm -r run lint"
+  },
+  "keywords": [
+    "vim",
+    "zellner",
+    "color-theme",
+    "vscode-theme",
+    "syntax-highlighting"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jsonc-parser": "^3.3.1"
+  }
+}

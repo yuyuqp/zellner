@@ -1,0 +1,89 @@
+{
+  "name": "vscode-theme-zellner-extended",
+  "displayName": "Zellner Theme Extended",
+  "description": "Extended light and dark variants of the Zellner color theme for Visual Studio Code",
+  "version": "0.1.0",
+  "publisher": "zellner",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "zellner",
+    "vim",
+    "light",
+    "dark",
+    "color-theme",
+    "theme"
+  ],
+  "galleryBanner": {
+    "color": "#FFFFFF",
+    "theme": "light"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vim/colorschemes"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Zellner Bright",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-bright-color-theme.json"
+      },
+      {
+        "label": "Zellner Bright Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-bright-dark-color-theme.json"
+      },
+      {
+        "label": "Zellner Bright Blue",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-bright-blue-color-theme.json"
+      },
+      {
+        "label": "Zellner Bright Magenta",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-bright-magenta-color-theme.json"
+      },
+      {
+        "label": "Zellner Bright Blue Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-bright-blue-dark-color-theme.json"
+      },
+      {
+        "label": "Zellner Bright Magenta Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-bright-magenta-dark-color-theme.json"
+      },
+      {
+        "label": "Zellner Soft",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-soft-color-theme.json"
+      },
+      {
+        "label": "Zellner Soft Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-soft-dark-color-theme.json"
+      },
+      {
+        "label": "Zellner Pastel",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-pastel-color-theme.json"
+      },
+      {
+        "label": "Zellner Pastel Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-pastel-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node ../../scripts/expand-theme.js ../../schemes/zellner-bright.scheme.json themes/zellner-bright-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-bright.dark.scheme.json themes/zellner-bright-dark-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-bright-blue.scheme.json themes/zellner-bright-blue-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-bright-magenta.scheme.json themes/zellner-bright-magenta-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-bright-blue.dark.scheme.json themes/zellner-bright-blue-dark-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-bright-magenta.dark.scheme.json themes/zellner-bright-magenta-dark-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-soft.scheme.json themes/zellner-soft-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-soft.dark.scheme.json themes/zellner-soft-dark-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-pastel.scheme.json themes/zellner-pastel-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner-pastel.dark.scheme.json themes/zellner-pastel-dark-color-theme.json",
+    "package": "pnpm run build && pnpm dlx @vscode/vsce package",
+    "lint": "node -e \"const fs = require('fs'); const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')); pkg.contributes.themes.forEach(theme => JSON.parse(fs.readFileSync(theme.path, 'utf8'))); console.log('Extended VS Code theme JSON is valid');\""
+  }
+}

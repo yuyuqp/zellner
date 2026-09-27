@@ -1,0 +1,49 @@
+{
+  "name": "vscode-theme-zellner",
+  "displayName": "Zellner Theme",
+  "description": "Port of the classic Zellner Vim color scheme to Visual Studio Code, with light and dark variants",
+  "version": "0.1.0",
+  "publisher": "zellner",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "zellner",
+    "vim",
+    "light",
+    "dark",
+    "color-theme",
+    "theme"
+  ],
+  "galleryBanner": {
+    "color": "#FFFFFF",
+    "theme": "light"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vim/colorschemes"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Zellner",
+        "uiTheme": "vs",
+        "path": "./themes/zellner-color-theme.json"
+      },
+      {
+        "label": "Zellner Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zellner-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node ../../scripts/expand-theme.js ../../schemes/zellner.scheme.json themes/zellner-color-theme.json && node ../../scripts/expand-theme.js ../../schemes/zellner.dark.scheme.json themes/zellner-dark-color-theme.json",
+    "package": "pnpm run build && pnpm dlx @vscode/vsce package",
+    "lint": "node -e \"const fs = require('fs'); const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')); pkg.contributes.themes.forEach(theme => JSON.parse(fs.readFileSync(theme.path, 'utf8'))); console.log('VS Code extension theme JSON is valid');\""
+  }
+}

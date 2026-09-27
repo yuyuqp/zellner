@@ -1,0 +1,86 @@
+{
+  "name": "Zellner Soft",
+  "type": "light",
+  "semanticHighlighting": true,
+  "ui": {
+    "background": "#F7F4EF",
+    "foreground": "#33312E",
+    "foregroundMuted": "#6B665F",
+    "foregroundSubtle": "#8F897F",
+    "foregroundDisabled": "#B0A99D",
+    "contrast": "#2A2825",
+    "surface": "#EFEAE2",
+    "surfaceElevated": "#E6E0D6",
+    "borderSubtle": "#E6E0D6",
+    "borderDefault": "#DAD2C4",
+    "borderControl": "#C7BCA9"
+  },
+  "accent": {
+    "primary": "#4E76A8",
+    "secondary": "#7C74A8"
+  },
+  "status": {
+    "error": "#B3453D",
+    "warning": "#916234",
+    "warningIcon": "#8C6BA8",
+    "success": "#5F8A5A",
+    "charts": {
+      "blue": "#4E76A8",
+      "green": "#5F8A5A",
+      "purple": "#8C6BA8",
+      "orange": "#916234"
+    }
+  },
+  "syntax": {
+    "primary": {
+      "foreground": "#33312E",
+      "comment": "#b3453d",
+      "keyword": "#916234",
+      "constant": "#b25fa0",
+      "string": "#b25fa0",
+      "function": "#4e76a8",
+      "entity": "#4c6591",
+      "tag": "#5f8a5a",
+      "invalid": "#b3453d",
+      "bracket": "#916234",
+      "carriageReturnBg": "#efeae2",
+      "ignoredBg": "#e6e0d6"
+    },
+    "plus": {
+      "function": "#4e76a8",
+      "type": "#4e76a8",
+      "controlKeyword": "#8c6ba8",
+      "variable": "#4c6591",
+      "constant": "#b25fa0",
+      "regexpGroup": "#8c6ba8",
+      "regexpEscape": "#b25fa0"
+    },
+    "base": {
+      "comment": "#b3453d",
+      "keyword": "#916234",
+      "number": "#b25fa0",
+      "string": "#b25fa0",
+      "regexp": "#8c6ba8",
+      "tag": "#5f8a5a",
+      "attribute": "#916234",
+      "property": "#4e76a8",
+      "header": "#8c6ba8",
+      "italic": "#7c74a8",
+      "invalid": "#b3453d"
+    }
+  },
+  "overrides": {
+    "colors": {
+      "editorLineNumber.foreground": "#916234",
+      "editorLineNumber.activeForeground": "#916234",
+      "editor.lineHighlightBackground": "#e6e0d6",
+      "editor.selectionBackground": "#e8d48040",
+      "editor.inactiveSelectionBackground": "#e8d48026",
+      "editor.findMatchBackground": "#8c6ba855",
+      "editor.findMatchHighlightBackground": "#8c6ba826",
+      "editorBracketMatch.background": "#b25fa040",
+      "diffEditor.insertedTextBackground": "#5f8a5a33",
+      "diffEditor.removedTextBackground": "#b3453d33"
+    }
+  }
+}
