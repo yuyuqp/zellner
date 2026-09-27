@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  verify:
+    name: Build, Test & Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build themes
+        run: pnpm build
+
+      - name: Run test suites
+        run: pnpm test
+
+      - name: Lint extension manifests and theme JSON
+        run: pnpm lint
+
+      - name: Package VSIX extensions
+        run: pnpm package
+
+      - name: Upload VSIX artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: zellner-vsix-packages
+          path: |
+            packages/vscode/*.vsix
+            packages/vscode-extended/*.vsix

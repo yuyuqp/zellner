@@ -3,8 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "description": "Port of the classic Zellner Vim color scheme to VS Code and other editors/tools",
+  "author": "Yue Yu",
   "type": "module",
   "packageManager": "pnpm@10.14.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuyuqp/zellner.git"
+  },
+  "homepage": "https://github.com/yuyuqp/zellner#readme",
+  "bugs": {
+    "url": "https://github.com/yuyuqp/zellner/issues"
+  },
   "scripts": {
     "compile:ref": "node scripts/compile-theme.js",
     "compile:ref:dark": "node scripts/compile-theme.js references/2026-dark.json interim/2026-dark.compiled.json",
@@ -12,6 +21,9 @@
     "expand:dark": "node scripts/expand-theme.js schemes/2026-dark.scheme.json interim/2026-dark.expanded.json",
     "build": "pnpm -r run build",
     "package": "pnpm --filter vscode-theme-zellner run package && pnpm --filter vscode-theme-zellner-extended run package",
+    "publish:vsce": "pnpm --filter vscode-theme-zellner run publish:vsce && pnpm --filter vscode-theme-zellner-extended run publish:vsce",
+    "publish:ovsx": "pnpm --filter vscode-theme-zellner run publish:ovsx && pnpm --filter vscode-theme-zellner-extended run publish:ovsx",
+    "publish:all": "pnpm run publish:vsce && pnpm run publish:ovsx",
     "test": "node --test scripts/test-theme.js scripts/test-theme-dark.js",
     "test:dark": "node --test scripts/test-theme-dark.js",
     "lint": "pnpm -r run lint"
