@@ -7,7 +7,7 @@ A faithful, modern port of Ron Aaron's classic [**`zellner`**](https://github.co
 
 Built atop a deterministic semantic theme engine modeled on VS Code's **2026 Light** and **2026 Dark** design systems, **Zellner** pairs classic, high-contrast Vim syntax highlighting with a clean, cohesive workbench.
 
-![Zellner & Zellner Dark Stacked Preview](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/hero-core.png)
+![Zellner & Zellner Dark Stacked Preview](assets/hero-core.png)
 
 This core pack includes **Zellner** (Light) and **Zellner Dark**. Eight additional variants (`Bright`, `Bright Magenta`, `Soft`, and `Pastel`) are available in the companion [**Zellner Theme Extended**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) extension ([Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended)).
 
@@ -18,12 +18,12 @@ This core pack includes **Zellner** (Light) and **Zellner Dark**. Eight addition
 ### Zellner (Light)
 Classic pure-white (`#FFFFFF`) editor canvas with bold red comments, sienna statements, magenta literals, vibrant blue identifiers, and Vim's unmistakable yellow (`#FFFF0080`) visual selection highlight.
 
-![Zellner Light Screenshot](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner.png)
+![Zellner Light Screenshot](assets/screenshots/zellner.png)
 
 ### Zellner Dark
 A rich near-black (`#121212`) dark counterpart that preserves the exact syntactic character of Zellner with hues tuned for dark-mode legibility.
 
-![Zellner Dark Screenshot](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-dark.png)
+![Zellner Dark Screenshot](assets/screenshots/zellner-dark.png)
 
 ---
 

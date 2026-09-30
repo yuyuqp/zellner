@@ -5,7 +5,7 @@
 
 The extended companion pack adds **8 light and dark variations** to the two core themes in [**Zellner Theme**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner) ([Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)).
 
-![Zellner Theme Extended Stacked Preview](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/hero-extended.png)
+![Zellner Theme Extended Stacked Preview](assets/hero-extended.png)
 
 ---
 
@@ -16,28 +16,28 @@ Unified pure-white (`#FFFFFF`) and pitch-black (`#000000`) editor and sidebar su
 
 | **Zellner Bright** | **Zellner Bright Dark** |
 | :---: | :---: |
-| ![Zellner Bright](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-bright.png) | ![Zellner Bright Dark](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-bright-dark.png) |
+| ![Zellner Bright](assets/screenshots/zellner-bright.png) | ![Zellner Bright Dark](assets/screenshots/zellner-bright-dark.png) |
 
 ### 2. Zellner Bright Magenta & Zellner Bright Magenta Dark
 High-contrast unified workbench surfaces with bold magenta (`#FF00FF` / `#FF66FF`) interactive buttons, focus rings, and active tab indicators.
 
 | **Zellner Bright Magenta** | **Zellner Bright Magenta Dark** |
 | :---: | :---: |
-| ![Zellner Bright Magenta](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-bright-magenta.png) | ![Zellner Bright Magenta Dark](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-bright-magenta-dark.png) |
+| ![Zellner Bright Magenta](assets/screenshots/zellner-bright-magenta.png) | ![Zellner Bright Magenta Dark](assets/screenshots/zellner-bright-magenta-dark.png) |
 
 ### 3. Zellner Soft & Zellner Soft Dark
 Warm, eye-comfort paper (`#FAF9F6`) and charcoal slate (`#181A1F`) backgrounds with softened contrast and gently desaturated Zellner syntax tokens.
 
 | **Zellner Soft** | **Zellner Soft Dark** |
 | :---: | :---: |
-| ![Zellner Soft](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-soft.png) | ![Zellner Soft Dark](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-soft-dark.png) |
+| ![Zellner Soft](assets/screenshots/zellner-soft.png) | ![Zellner Soft Dark](assets/screenshots/zellner-soft-dark.png) |
 
 ### 4. Zellner Pastel & Zellner Pastel Dark
 Delicate, low-saturation pastel syntax palettes on soothing cream (`#F6F4F0`) and deep twilight (`#1E2028`) surfaces designed for extended coding sessions.
 
 | **Zellner Pastel** | **Zellner Pastel Dark** |
 | :---: | :---: |
-| ![Zellner Pastel](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-pastel.png) | ![Zellner Pastel Dark](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/screenshots/zellner-pastel-dark.png) |
+| ![Zellner Pastel](assets/screenshots/zellner-pastel.png) | ![Zellner Pastel Dark](assets/screenshots/zellner-pastel-dark.png) |
 
 ---
 
