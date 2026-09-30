@@ -2,11 +2,15 @@
 
 All notable changes to the "vscode-theme-zellner-extended" extension will be documented in this file.
 
+## [0.2.0] - 2026-09-29
+
+### Changed
+- Removed redundant **Zellner Bright Blue** and **Zellner Bright Blue Dark** themes (which shared the same primary blue accent as **Zellner Bright** / **Zellner Bright Dark**), streamlining the extended pack to 8 distinct themes.
+
 ## [0.1.1] - 2026-09-28
 
 ### Changed
 - Improved Quick Open / Command Palette selected-row and match contrast across VS Code versions.
-- Removed redundant **Zellner Bright Blue** and **Zellner Bright Blue Dark** themes (which shared the same blue primary accent and palette as **Zellner Bright** / **Zellner Bright Dark**), streamlining the extended pack to 8 distinct themes.
 
 ## [0.1.0] - 2026-09-26
 
