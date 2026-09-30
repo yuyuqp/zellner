@@ -27,7 +27,7 @@
     "test": "node --test scripts/test-theme.js scripts/test-theme-dark.js",
     "test:dark": "node --test scripts/test-theme-dark.js",
     "update-badges": "node scripts/update-badges.js",
-    "version": "node scripts/update-badges.js && git add assets/badges/ README.md packages/vscode/README.md packages/vscode-extended/README.md",
+    "version": "node scripts/update-badges.js && git add README.md packages/vscode/README.md packages/vscode-extended/README.md",
     "lint": "pnpm -r run lint"
   },
   "keywords": [

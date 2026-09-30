@@ -1,7 +1,7 @@
 # Zellner Theme for Visual Studio Code
 
-[![VS Code Marketplace](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/badges/vscode-marketplace.svg)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner)
-[![Open VSX](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/badges/open-vsx.svg)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-v0.2.0-007ACC?logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner)
+[![Open VSX](https://img.shields.io/badge/Open%20VSX-v0.2.0-orange?logo=eclipse-ide)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
 
 A faithful, modern port of Ron Aaron's classic [**`zellner`**](https://github.com/vim/colorschemes) light color scheme from Vim to Visual Studio Code.
 
