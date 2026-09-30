@@ -1,6 +1,6 @@
 {
   "name": "zellner-theme",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Port of the classic Zellner Vim color scheme to VS Code and other editors/tools",
   "author": "Yue Yu",
@@ -26,6 +26,8 @@
     "publish:all": "pnpm run publish:vsce && pnpm run publish:ovsx",
     "test": "node --test scripts/test-theme.js scripts/test-theme-dark.js",
     "test:dark": "node --test scripts/test-theme-dark.js",
+    "update-badges": "node scripts/update-badges.js",
+    "version": "node scripts/update-badges.js && git add README.md packages/vscode/README.md packages/vscode-extended/README.md",
     "lint": "pnpm -r run lint"
   },
   "keywords": [

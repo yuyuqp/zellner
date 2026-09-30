@@ -1,7 +1,7 @@
 # Zellner Theme for Visual Studio Code
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/YueYu.vscode-theme-zellner?label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner)
-[![Open VSX](https://img.shields.io/open-vsx/v/YueYu/vscode-theme-zellner?label=Open%20VSX&logo=eclipse-ide)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-v0.2.0-007ACC?logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner)
+[![Open VSX](https://img.shields.io/badge/Open%20VSX-v0.2.0-orange?logo=eclipse-ide)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
 
 A faithful, modern port of Ron Aaron's classic [**`zellner`**](https://github.com/vim/colorschemes) light color scheme from Vim to Visual Studio Code.
 
@@ -9,7 +9,7 @@ Built atop a deterministic semantic theme engine modeled on VS Code's **2026 Lig
 
 ![Zellner & Zellner Dark Stacked Preview](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/hero-core.png)
 
-This core pack includes **Zellner** (Light) and **Zellner Dark**. Ten additional variants (`Bright`, `Bright Blue`, `Bright Magenta`, `Soft`, and `Pastel`) are available in the companion [**Zellner Theme Extended**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) extension ([Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended)).
+This core pack includes **Zellner** (Light) and **Zellner Dark**. Eight additional variants (`Bright`, `Bright Magenta`, `Soft`, and `Pastel`) are available in the companion [**Zellner Theme Extended**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) extension ([Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended)).
 
 ---
 
@@ -51,7 +51,7 @@ Zellner uses high-contrast, recognizable colors that maximize readability:
 1. Open **Command Palette**: `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
 2. Type **Preferences: Color Theme** (`Ctrl+K Ctrl+T` or `Cmd+K Cmd+T`).
 3. Select **Zellner** or **Zellner Dark**.
-4. Want more variants? Install [**Zellner Theme Extended**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) for 10 additional `Bright`, `Soft`, and `Pastel` themes.
+4. Want more variants? Install [**Zellner Theme Extended**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) for 8 additional `Bright`, `Bright Magenta`, `Soft`, and `Pastel` themes.
 
 ### Semantic Highlighting
 
