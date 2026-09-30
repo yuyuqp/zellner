@@ -117,11 +117,10 @@ describe('Dark Theme Abstraction & Expansion System (2026 Dark)', () => {
     assert.equal(zellnerDarkTheme.semanticTokenColors['stringLiteral'], '#ff66ff');
   });
 
-  it('aligns all 6 Zellner dark schemes cleanly with the 326-key dark template', () => {
+  it('aligns all 5 Zellner dark schemes cleanly with the 326-key dark template', () => {
     const darkSchemes = [
       'schemes/zellner.dark.scheme.json',
       'schemes/zellner-bright.dark.scheme.json',
-      'schemes/zellner-bright-blue.dark.scheme.json',
       'schemes/zellner-bright-magenta.dark.scheme.json',
       'schemes/zellner-soft.dark.scheme.json',
       'schemes/zellner-pastel.dark.scheme.json'

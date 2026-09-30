@@ -17,7 +17,7 @@ This monorepo publishes two companion extensions across the **Visual Studio Code
 | Package | Themes Included | Install Links |
 | :--- | :--- | :--- |
 | **[Zellner Theme](packages/vscode/README.md)** (`YueYu.vscode-theme-zellner`) | **2 Core Themes**: `Zellner` (Light) & `Zellner Dark` | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner) · [Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner) |
-| **[Zellner Theme Extended](packages/vscode-extended/README.md)** (`YueYu.vscode-theme-zellner-extended`) | **10 Extended Variants**: `Bright`, `Bright Blue`, `Bright Magenta`, `Soft`, and `Pastel` (Light & Dark) | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) · [Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended) |
+| **[Zellner Theme Extended](packages/vscode-extended/README.md)** (`YueYu.vscode-theme-zellner-extended`) | **8 Extended Variants**: `Bright`, `Bright Magenta`, `Soft`, and `Pastel` (Light & Dark) | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended) · [Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended) |
 
 ---
 
@@ -36,7 +36,6 @@ This monorepo publishes two companion extensions across the **Visual Studio Code
 | Variant Family | Light | Dark |
 | :--- | :---: | :---: |
 | **Zellner Bright**<br>High-contrast pure white / pitch black surfaces with magenta tab accents | ![Zellner Bright](assets/screenshots/zellner-bright.png) | ![Zellner Bright Dark](assets/screenshots/zellner-bright-dark.png) |
-| **Zellner Bright Blue**<br>High-contrast surfaces with classic blue interactive accents | ![Zellner Bright Blue](assets/screenshots/zellner-bright-blue.png) | ![Zellner Bright Blue Dark](assets/screenshots/zellner-bright-blue-dark.png) |
 | **Zellner Bright Magenta**<br>High-contrast surfaces with vibrant magenta interactive accents | ![Zellner Bright Magenta](assets/screenshots/zellner-bright-magenta.png) | ![Zellner Bright Magenta Dark](assets/screenshots/zellner-bright-magenta-dark.png) |
 | **Zellner Soft**<br>Warm, reduced-glare canvas (`#FAF9F6` / `#181A1F`) with desaturated hues | ![Zellner Soft](assets/screenshots/zellner-soft.png) | ![Zellner Soft Dark](assets/screenshots/zellner-soft-dark.png) |
 | **Zellner Pastel**<br>Gentle, low-saturation pastel palette for long coding sessions | ![Zellner Pastel](assets/screenshots/zellner-pastel.png) | ![Zellner Pastel Dark](assets/screenshots/zellner-pastel-dark.png) |
@@ -50,7 +49,7 @@ zellner/
 ├── assets/                          # Hero banners and theme screenshots
 │   ├── hero-core.png                # Stacked hero preview for Zellner Core
 │   ├── hero-extended.png            # Stacked hero preview for Zellner Extended
-│   └── screenshots/                 # Full-resolution captures of all 12 themes
+│   └── screenshots/                 # Full-resolution captures of all 10 themes
 ├── docs/
 │   └── 2026-dark-findings.md        # Technical analysis of 2026 Light vs. 2026 Dark
 ├── interim/                         # Compiled and expanded theme snapshots
@@ -60,7 +59,7 @@ zellner/
 │   └── 2026-dark.expanded.json      # Generated dark reference output from minimal scheme
 ├── packages/                        # Monorepo target packages
 │   ├── vscode/                      # Core VS Code pack (2 themes)
-│   └── vscode-extended/             # Extended VS Code pack (10 themes)
+│   └── vscode-extended/             # Extended VS Code pack (8 themes)
 ├── references/                      # Upstream reference color schemes
 │   ├── zellner.vim                  # Official Vim zellner colorscheme
 │   ├── 2026-light.json              # VS Code 2026 Light leaf theme
@@ -76,11 +75,9 @@ zellner/
 │   ├── 2026-dark.scheme.json        # Abstract semantic dark reference palette (~65 lines)
 │   ├── zellner.scheme.json          # Zellner semantic color scheme definition
 │   ├── zellner-bright.scheme.json   # Zellner Bright light variant
-│   ├── zellner-bright-blue.scheme.json    # Zellner Bright Blue light variant
 │   ├── zellner-bright-magenta.scheme.json # Zellner Bright Magenta light variant
 │   ├── zellner.dark.scheme.json     # Zellner Dark spin
 │   ├── zellner-bright.dark.scheme.json    # Zellner Bright Dark spin
-│   ├── zellner-bright-blue.dark.scheme.json    # Zellner Bright Blue Dark spin
 │   ├── zellner-bright-magenta.dark.scheme.json # Zellner Bright Magenta Dark spin
 │   ├── zellner-soft.scheme.json           # Zellner Soft: lower-contrast, desaturated light spin
 │   ├── zellner-soft.dark.scheme.json      # Zellner Soft Dark: lower-contrast, desaturated dark spin
@@ -146,7 +143,7 @@ pnpm expand:dark
 ```
 
 ### 3. Build & Package Extensions
-Expands the 12 Zellner schemes into the core (2 themes) and extended (10 themes) VS Code extension packages:
+Expands the 10 Zellner schemes into the core (2 themes) and extended (8 themes) VS Code extension packages:
 
 ```bash
 pnpm build
