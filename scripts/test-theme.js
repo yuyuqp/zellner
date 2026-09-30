@@ -4,6 +4,50 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { expandTheme, expandThemeFile } from './expand-theme.js';
 
+// VS Code 1.109 ignores quickInputList.focusHighlightForeground and uses
+// list.focusHighlightForeground (falling back to list.highlightForeground).
+// Keep both the legacy and current selected-match paths readable.
+describe('Quick Open contrast across VS Code versions', () => {
+  function luminance(hex) {
+    assert.match(hex, /^#[0-9a-f]{6}$/i, 'Contrast checks require opaque RGB colors');
+    return [1, 3, 5].map(offset => {
+      const channel = parseInt(hex.slice(offset, offset + 2), 16) / 255;
+      return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+    }).reduce((sum, channel, index) => sum + channel * [0.2126, 0.7152, 0.0722][index], 0);
+  }
+
+  function assertReadable(foreground, background, context) {
+    const a = luminance(foreground);
+    const b = luminance(background);
+    const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    assert.ok(ratio >= 4.5, `${context}: contrast ${ratio.toFixed(2)} must be at least 4.5:1`);
+  }
+
+  for (const pack of ['vscode', 'vscode-extended']) {
+    const directory = path.resolve('packages', pack);
+    const pkg = JSON.parse(fs.readFileSync(path.join(directory, 'package.json'), 'utf8'));
+    for (const entry of pkg.contributes.themes) {
+      it(`${entry.label} keeps selected filenames and matches readable`, () => {
+        const theme = JSON.parse(fs.readFileSync(path.join(directory, entry.path), 'utf8'));
+        const colors = theme.colors;
+        const background = colors['quickInputList.focusBackground'];
+        const legacyMatch = colors['list.focusHighlightForeground'] ?? colors['list.highlightForeground'];
+        assertReadable(legacyMatch, background, 'VS Code 1.109 match');
+        assertReadable(colors['quickInputList.focusHighlightForeground'], background, 'Current match');
+        assertReadable(colors['quickInputList.focusForeground'], background, 'Selected filename');
+        assertReadable(colors['list.highlightForeground'], colors['quickInput.background'], 'Unselected match');
+        assert.notEqual(background, colors['quickInput.background'], 'Selected row must remain visible');
+        const schemeFile = fs.readdirSync('schemes').find(file => {
+          if (!file.startsWith('zellner') || !file.endsWith('.scheme.json')) return false;
+          return JSON.parse(fs.readFileSync(path.join('schemes', file), 'utf8')).name === theme.name;
+        });
+        const scheme = JSON.parse(fs.readFileSync(path.join('schemes', schemeFile), 'utf8'));
+        assert.deepStrictEqual(theme, expandTheme(scheme), 'Packaged theme must match its source scheme');
+      });
+    }
+  }
+});
+
 const COMPILED_PATH = path.resolve('interim/2026-light.compiled.json');
 const SCHEME_PATH = path.resolve('schemes/2026-light.scheme.json');
 const EXPANDED_PATH = path.resolve('interim/2026-light.expanded.json');

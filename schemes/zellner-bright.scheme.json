@@ -71,6 +71,10 @@
   },
   "overrides": {
     "colors": {
+      "quickInputList.focusBackground": "#F0F0F0",
+      "quickInputList.focusForeground": "#000000",
+      "quickInputList.focusIconForeground": "#000000",
+      "quickInputList.focusHighlightForeground": "#0000FF",
       "activityBar.activeBackground": "#FFFFFF",
       "activityBar.activeBorder": "#0000FF",
       "editorGroup.border": "#E6E6E6",

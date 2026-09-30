@@ -71,6 +71,10 @@
   },
   "overrides": {
     "colors": {
+      "quickInputList.focusBackground": "#303030",
+      "quickInputList.focusForeground": "#FFFFFF",
+      "quickInputList.focusIconForeground": "#FFFFFF",
+      "quickInputList.focusHighlightForeground": "#6DB8F2",
       "editor.foreground": "#FFFFFF",
       "editorLineNumber.foreground": "#d2691e",
       "editorLineNumber.activeForeground": "#d2691e",

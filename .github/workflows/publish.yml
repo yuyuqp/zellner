@@ -44,15 +44,15 @@ jobs:
       - name: Publish to Visual Studio Marketplace
         if: env.VSCE_PAT != ''
         run: |
-          pnpm dlx @vscode/vsce publish --packagePath packages/vscode/vscode-theme-zellner-0.1.0.vsix -p "$VSCE_PAT"
-          pnpm dlx @vscode/vsce publish --packagePath packages/vscode-extended/vscode-theme-zellner-extended-0.1.0.vsix -p "$VSCE_PAT"
+          pnpm dlx @vscode/vsce publish --packagePath packages/vscode/vscode-theme-zellner-0.1.1.vsix -p "$VSCE_PAT"
+          pnpm dlx @vscode/vsce publish --packagePath packages/vscode-extended/vscode-theme-zellner-extended-0.1.1.vsix -p "$VSCE_PAT"
 
       - name: Publish to Open VSX Registry
         if: env.OVSX_PAT != ''
         run: |
           pnpm dlx ovsx create-namespace YueYu -p "$OVSX_PAT" || true
-          pnpm dlx ovsx publish packages/vscode/vscode-theme-zellner-0.1.0.vsix -p "$OVSX_PAT"
-          pnpm dlx ovsx publish packages/vscode-extended/vscode-theme-zellner-extended-0.1.0.vsix -p "$OVSX_PAT"
+          pnpm dlx ovsx publish packages/vscode/vscode-theme-zellner-0.1.1.vsix -p "$OVSX_PAT"
+          pnpm dlx ovsx publish packages/vscode-extended/vscode-theme-zellner-extended-0.1.1.vsix -p "$OVSX_PAT"
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
