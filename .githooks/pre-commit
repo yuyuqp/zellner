@@ -1,4 +1,4 @@
 #!/bin/sh
-# Pre-commit hook to generate canonical local SVG badges across packages
+# Pre-commit hook to generate local SVG badges and update README links
 node scripts/update-badges.js
-git add assets/badges/ packages/vscode/assets/badges/ packages/vscode-extended/assets/badges/ README.md packages/vscode/README.md packages/vscode-extended/README.md
+git add assets/badges/ README.md packages/vscode/README.md packages/vscode-extended/README.md
