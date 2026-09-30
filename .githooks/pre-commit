@@ -1,0 +1,4 @@
+#!/bin/sh
+# Pre-commit hook to synchronize README badges with current package.json version
+node scripts/update-badges.js
+git add README.md packages/vscode/README.md packages/vscode-extended/README.md

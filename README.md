@@ -1,7 +1,7 @@
 # Zellner Theme
 
 [![VS Code Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-v0.2.0-007ACC?logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner)
-[![Open VSX](https://img.shields.io/open-vsx/v/YueYu/vscode-theme-zellner?label=Open%20VSX&logo=eclipse-ide)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
+[![Open VSX](https://img.shields.io/badge/Open%20VSX-v0.2.0-orange?logo=eclipse-ide)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Port of Ron Aaron's classic [**`zellner`**](references/zellner.vim) Vim light color scheme to Visual Studio Code and modern development tools, built on a deterministic semantic theme abstraction layer modeled after VS Code's **2026 Light** and **2026 Dark** architectures (see [2026 Dark Architecture Findings](docs/2026-dark-findings.md)).
