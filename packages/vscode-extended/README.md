@@ -1,7 +1,7 @@
 # Zellner Theme Extended for Visual Studio Code
 
-[![VS Code Marketplace](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/badges/vscode-marketplace.svg)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended)
-[![Open VSX](https://raw.githubusercontent.com/yuyuqp/zellner/main/assets/badges/open-vsx.svg)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended)
+[![VS Code Marketplace](assets/badges/vscode-marketplace.svg)](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner-extended)
+[![Open VSX](assets/badges/open-vsx.svg)](https://open-vsx.org/extension/YueYu/vscode-theme-zellner-extended)
 
 The extended companion pack adds **8 light and dark variations** to the two core themes in [**Zellner Theme**](https://marketplace.visualstudio.com/items?itemName=YueYu.vscode-theme-zellner) ([Open VSX](https://open-vsx.org/extension/YueYu/vscode-theme-zellner)).
 
